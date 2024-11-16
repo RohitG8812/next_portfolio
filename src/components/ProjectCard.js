@@ -12,7 +12,12 @@ const ProjectCard = ({ fade, project }) => {
       data-aos={fade}
       data-aos-duration="2000"
     >
-      <Box className="project-card-open-section">
+      <Box
+        className="project-card-open-section"
+        onClick={() => {
+          window.open(project.link, "_blank");
+        }}
+      >
         <Box>
           <Typography
             color={"#fff"}
@@ -35,9 +40,6 @@ const ProjectCard = ({ fade, project }) => {
               color: "#fff",
               fontSize: "25px",
               transform: "rotate(-40deg)",
-            }}
-            onClick={() => {
-              window.open(project.link, "_blank");
             }}
           />
         </Box>

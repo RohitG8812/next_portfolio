@@ -9,14 +9,12 @@ import Todo_App from "../components/icons/projects/todo.png";
 import Travel from "../components/icons/projects/travel.png";
 import Spotify from "../components/icons/projects/spotify.png";
 const Projects = () => {
-  const [selectedTab, setSelectedTab] = useState(0);
-
   const projects = [
     {
       name: "BellaVita",
       desc: "A clone of E-commerce Website",
       image: BellaVita.src,
-      link: "https://socialmedia-ae9jk1qru-prathameshschavans-projects.vercel.app/login",
+      link: "https://github.com/RohitG8812/BellaVita_Clone",
     },
     {
       name: "Portfolio",
@@ -28,25 +26,25 @@ const Projects = () => {
       name: "PromptlyAi",
       desc: "Ai Chat Website",
       image: PromptlyAi.src,
-      link: "https://socialmedia-ae9jk1qru-prathameshschavans-projects.vercel.app/login",
+      link: "https://github.com/RohitG8812/PromtlyAI",
     },
     {
       name: "Todo",
       desc: "Todo website",
       image: Todo_App.src,
-      link: "https://www.prathameshchavan.online/",
+      link: "https://github.com/RohitG8812/ToDo",
     },
     {
       name: "Travel",
       desc: "A Travel Website Landing Page",
       image: Travel.src,
-      link: "https://www.prathameshchavan.online/",
+      link: "https://github.com/RohitG8812/Travel",
     },
     {
       name: "Spotify",
       desc: "A clone of Spotify UI",
       image: Spotify.src,
-      link: "https://www.prathameshchavan.online/",
+      link: "https://github.com/RohitG8812/Spotify_Ui_Clone",
     },
   ];
 
