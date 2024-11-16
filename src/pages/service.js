@@ -27,7 +27,7 @@ const Service = () => {
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
-      p={"4% 0"}
+      p={"5% 0"}
       bgcolor={"#f6f3fc"}
     >
       <Box className="global_width">

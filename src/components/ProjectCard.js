@@ -16,14 +16,14 @@ const ProjectCard = ({ fade, project }) => {
         <Box>
           <Typography
             color={"#fff"}
-            fontSize={["20px", "22px", "22px", "22px"]}
+            fontSize={["16px", "18px", "20px", "20px"]}
             fontWeight={"bold"}
           >
             {project.name}
           </Typography>
           <Typography
             color={"#fff"}
-            fontSize={["14px", "14px", "14px", "16px"]}
+            fontSize={["12px", "13px", "14px", "14px"]}
             variant="p"
           >
             {project.desc}
@@ -33,7 +33,7 @@ const ProjectCard = ({ fade, project }) => {
           <EastIcon
             sx={{
               color: "#fff",
-              fontSize: "40px",
+              fontSize: "25px",
               transform: "rotate(-40deg)",
             }}
             onClick={() => {

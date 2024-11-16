@@ -63,7 +63,7 @@ button {
   font-weight: 600;
   background-color: #fff;
   border: 0.4px solid #7947df;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -123,7 +123,7 @@ button {
   border: 0.4px solid #7947df;
   border-radius: 50%;
   color: #7947df;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -260,6 +260,10 @@ button {
   font-size: 30px;
   transform: rotate(45deg);
   transition: transform 0.4s ease-in-out;
+
+  @media (max-width: 550px) {
+    font-size: 22px;
+  }
 }
 
 .service-header {
@@ -389,17 +393,16 @@ input[id="tabs-4"]:checked ~ .glider {
 
 .project-card-open-section {
   width: 100%;
-  border-radius: 20px;
-  /* height: %; */
+  border-radius: 10px;
   background-image: linear-gradient(to right, #7947df, #2a1454);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 20px;
+  padding-inline: 15px;
   padding-top: 5px;
-  padding-bottom: 10px;
-  animation: inAnimation 0.8s;
+  padding-bottom: 8px;
+  animation: inAnimation 0.7s;
   display: none;
 }
 
@@ -411,13 +414,13 @@ input[id="tabs-4"]:checked ~ .glider {
 }
 
 .project-card {
-  height: 550px;
-  width: 550px;
+  height: 320px;
+  width: 100%;
   border: 1px solid #ccc;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -425,6 +428,10 @@ input[id="tabs-4"]:checked ~ .glider {
   background-color: #49288b;
   margin: 3%;
   box-shadow: 0 0 1000px rgba(0, 0, 0, 0.9) inset;
+
+  @media (max-width : 600px) {
+    height: 250px;
+  }
 }
 
 .project-card:hover {
@@ -552,11 +559,6 @@ textarea {
     display: none;
   }
 
-  .project-card {
-    height: 200px;
-    width: 200px;
-  }
-
   .tabs {
     width: 100% !important;
   }
@@ -609,10 +611,6 @@ textarea {
   .glider {
     width: 95px;
   }
-  .project-card {
-    width: 360px;
-    height: 360px;
-  }
 
   .skill-card {
     width: 150px;
@@ -649,11 +647,6 @@ textarea {
   }
   .glider {
     width: 115px;
-  }
-
-  .project-card {
-    width: 400px;
-    height: 400px;
   }
 
   .skill-card {
@@ -693,19 +686,6 @@ textarea {
     width: 170px;
   }
 
-  .project-card {
-    width: 370px;
-    height: 370px;
-  }
-
-  .project-card {
-    width: 380px;
-    height: 380px;
-  }
-
-  /* .big-screen-outline-btn-container{
-    display: none;
-  } */
   .small-screen-outline-btn-container {
     display: none;
   }
@@ -737,10 +717,6 @@ textarea {
     width: 170px;
   }
 
-  .project-card {
-    width: 450px;
-    height: 450px;
-  }
   .small-screen-outline-btn-container {
     display: none;
   }
@@ -770,10 +746,7 @@ textarea {
   .glider {
     width: 170px;
   }
-  .project-card {
-    width: 500px;
-    height: 500px;
-  }
+
   .small-screen-outline-btn-container {
     display: none;
   }

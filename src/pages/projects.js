@@ -2,39 +2,52 @@ import Layout from "@/components/Layout";
 import ProjectCard from "@/components/ProjectCard";
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-import AuraImage from "../components/icons/projects/Aura.png";
-import AirBnbImage from "../components/icons/projects/Airbnb.png";
-import LinkpodImage from "../components/icons/projects/Linkpod.png";
-import PortFolioImage from "../components/icons/projects/Portfolio.png";
+import BellaVita from "../components/icons/projects/bellavita.png";
+import Portfolio from "../components/icons/projects/portfolio.png";
+import PromptlyAi from "../components/icons/projects/promptlyAi.png";
+import Todo_App from "../components/icons/projects/todo.png";
+import Travel from "../components/icons/projects/travel.png";
+import Spotify from "../components/icons/projects/spotify.png";
 const Projects = () => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   const projects = [
     {
-      name: "Aura",
-      desc : "A social media application",
-      image: AuraImage.src,
-      link: "https://socialmedia-ae9jk1qru-prathameshschavans-projects.vercel.app/login",
-    },
-    {
-      name: "Airbnb",
-      desc : "A clone of airbnb.co.in",
-      image: AirBnbImage.src,
-      link: "https://project-airbnb-com.vercel.app/",
-    },
-    {
-      name: "Linkpod",
-      desc : "A linkedin profile booster",
-      image: LinkpodImage.src,
+      name: "BellaVita",
+      desc: "A clone of E-commerce Website",
+      image: BellaVita.src,
       link: "https://socialmedia-ae9jk1qru-prathameshschavans-projects.vercel.app/login",
     },
     {
       name: "Portfolio",
-      desc : "A portfolio website",
-      image: PortFolioImage.src,
+      desc: "A portfolio website",
+      image: Portfolio.src,
+      link: "https://project-airbnb-com.vercel.app/",
+    },
+    {
+      name: "PromptlyAi",
+      desc: "Ai Chat Website",
+      image: PromptlyAi.src,
+      link: "https://socialmedia-ae9jk1qru-prathameshschavans-projects.vercel.app/login",
+    },
+    {
+      name: "Todo",
+      desc: "Todo website",
+      image: Todo_App.src,
       link: "https://www.prathameshchavan.online/",
     },
-
+    {
+      name: "Travel",
+      desc: "A Travel Website Landing Page",
+      image: Travel.src,
+      link: "https://www.prathameshchavan.online/",
+    },
+    {
+      name: "Spotify",
+      desc: "A clone of Spotify UI",
+      image: Spotify.src,
+      link: "https://www.prathameshchavan.online/",
+    },
   ];
 
   return (
@@ -52,7 +65,7 @@ const Projects = () => {
           <Typography className="gradient-font heading" variant="h5">
             My Recent Works
           </Typography>
-          <Typography fontSize={"14px"}  color={"rgb(120, 120, 120)"}>
+          <Typography fontSize={"14px"} color={"rgb(120, 120, 120)"}>
             We put your ideas and thus your wishes in the form of a unique web
             project <br /> that inspires you and you customers.
           </Typography>
@@ -60,7 +73,7 @@ const Projects = () => {
       </Box>
       <Box
         className="global_width"
-        mt={"50px"}
+        mt={"20px"}
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
@@ -76,11 +89,14 @@ const Projects = () => {
               key={i}
               item
               lg={6}
-              md={4}
-              sm={4}
+              md={6}
+              sm={12}
               xs={12}
             >
-              <ProjectCard fade={i % 2 == 0 ? "fade-right" : "fade-left"} project={project} />
+              <ProjectCard
+                fade={i % 2 == 0 ? "fade-right" : "fade-left"}
+                project={project}
+              />
             </Grid>
           ))}
         </Grid>

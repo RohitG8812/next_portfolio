@@ -4,15 +4,15 @@ import DownloadIcon from "@mui/icons-material/Download";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import DP from "../components/icons/display_profile.jpg";
+import DP from "../components/icons/display_profile2.jpg";
 import React from "react";
 
 const Landing = () => {
   const numerics = [
-    { desc1: "Years of", desc2: "Experience", number: 2 },
-    { desc1: "Project", desc2: "Completed", number: 15 },
-    { desc1: "Happy", desc2: "Client", number: 10 },
-    { desc1: "Certification", desc2: "Acquired", number: 8 },
+    { desc1: "Years of", desc2: "Experience", number: 1 },
+    { desc1: "Project", desc2: "Completed", number: 10 },
+    { desc1: "Happy", desc2: "Client", number: 5 },
+    { desc1: "Certification", desc2: "Acquired", number: 6 },
   ];
 
   const handleDownload = () => {
@@ -140,21 +140,21 @@ const Landing = () => {
                         >
                           <IconButton
                             target="_blank"
-                            href="https://x.com/Prathamesh_2117"
+                            href="https://x.com/RohitGupta84553"
                             className="outlined-icon-btn"
                           >
                             <TwitterIcon sx={{ fontSize: "20px" }} />
                           </IconButton>
                           <IconButton
                             target="_blank"
-                            href="https://www.linkedin.com/in/prathamesh-chavan-5532261b4/"
+                            href="https://www.linkedin.com/in/rohit-gupta-5189a6280/"
                             className="outlined-icon-btn"
                           >
                             <LinkedInIcon sx={{ fontSize: "20px" }} />
                           </IconButton>
                           <IconButton
                             target="_blank"
-                            href="https://github.com/Prathameshschavan"
+                            href="https://github.com/RohitG8812"
                             className="outlined-icon-btn"
                           >
                             <GitHubIcon sx={{ fontSize: "20px" }} />
@@ -242,28 +242,38 @@ const Landing = () => {
             </Box>
 
             <Grid
-              mt={"8%"}
+              mt={"6%"}
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
               color={"#8750f7"}
               container
-              spacing={"50px"}
-              mb={"30px"}
+              columnSpacing={"40px"}
+              mb={"50px"}
+              paddingInline={"5px"}
             >
               {numerics.map((num, key) => (
-                <Grid key={key} item xs={12} md={6} lg={3}>
+                <Grid key={key} item xs={6} md={3} lg={3}>
                   <Box
                     display={"flex"}
                     gap={"15px"}
                     justifyContent={"center"}
                     alignItems={"center"}
+                    paddingTop={"40px"}
                   >
-                    <Typography fontWeight={"bold"} fontSize={"70px"}>
+                    <Typography
+                      fontWeight={"bold"}
+                      fontSize={["35px", "60px", "60px", "70px"]}
+                      className="numerics_data_head"
+                    >
                       {num.number}+
                     </Typography>
-                    <Typography fontSize={"18px"} variant="p">
-                      {num.desc1} <br /> {num.desc2}
+                    <Typography
+                      fontSize={["15.5px", "16px", "16px", "18px"]}
+                      variant="p"
+                      className="numerics_data_subhead"
+                    >
+                      {num.desc1} {num.desc2}
                     </Typography>
                   </Box>
                 </Grid>
