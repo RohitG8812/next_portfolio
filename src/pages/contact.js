@@ -7,12 +7,12 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import React, { useState } from "react";
 import CallIcon from "@mui/icons-material/Call";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 const Contact = () => {
+  const [messageSent, setMessageSent] = useState(false);
   return (
     <Box
       width={"100%"}
@@ -47,22 +47,34 @@ const Contact = () => {
               <form>
                 <Grid container spacing={2}>
                   <Grid item sm={6} xs={6}>
-                    <TextField fullWidth placeholder="First name" />
+                    <TextField
+                      fullWidth
+                      size="small"
+                      placeholder="First name"
+                    />
                   </Grid>
                   <Grid item sm={6} xs={6}>
-                    <TextField fullWidth placeholder="Last name" />
+                    <TextField fullWidth size="small" placeholder="Last name" />
                   </Grid>
-                  <Grid item sm={6} xs={6}>
-                    <TextField fullWidth placeholder="Email address" />
+                  <Grid item sm={6} xs={12}>
+                    <TextField
+                      fullWidth
+                      size="small"
+                      placeholder="Email address"
+                    />
                   </Grid>
-                  <Grid item sm={6} xs={6}>
-                    <TextField fullWidth placeholder="Phone number" />
+                  <Grid item sm={6} xs={12}>
+                    <TextField
+                      fullWidth
+                      size="small"
+                      placeholder="Phone number"
+                    />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
                       multiline
-                      rows={8}
+                      rows={6}
                       placeholder="Message"
                     />
                   </Grid>
@@ -110,7 +122,7 @@ const Contact = () => {
                       width: "60px",
                       height: "60px",
                     }}
-                    href="tel:+919860204367"
+                    href="tel:+91 8483982211"
                   >
                     <CallIcon />
                   </IconButton>
@@ -125,13 +137,13 @@ const Contact = () => {
                     </Typography>
                     <Typography
                       onClick={() => {
-                        window.open("tel:+919860204367");
+                        window.open("tel:+91 8483982211");
                       }}
                       variant="h6"
                       className="pointer"
                       fontSize={["18px", "18px", "18px", "22px"]}
                     >
-                      +91 9860204367
+                      +91 8483982211
                     </Typography>
                   </Box>
                 </Box>
@@ -154,7 +166,7 @@ const Contact = () => {
                       width: "60px",
                       height: "60px",
                     }}
-                    href="mailto:prathameshschavan.work@gmail.com"
+                    href="mailto:rohitg8812@gmail.com"
                   >
                     <AlternateEmailIcon />
                   </IconButton>
@@ -171,7 +183,7 @@ const Contact = () => {
                       variant="h6"
                       fontSize={["18px", "18px", "18px", "22px"]}
                       onClick={() => {
-                        window.open("mailto:prathameshschavan.work@gmail.com");
+                        window.open("mailto:rohitg8812@gmail.com");
                       }}
                       className="pointer"
                     >

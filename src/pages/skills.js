@@ -11,6 +11,11 @@ import NodeJsIcon from "../components/icons/nodejs.png";
 import ReactIcon from "../components/icons/react.png";
 import ReduxIcon from "../components/icons/redux.png";
 import TailwindIcon from "../components/icons/tailwind.png";
+import GitIcon from "../components/icons/git.svg";
+import FirebaseIcon from "../components/icons/firebase.svg";
+import NetlifyIcon from "../components/icons/netlify.svg";
+import BootstrapIcon from "../components/icons/bootstrap.svg";
+import VercelIcon from "../components/icons/vercel.svg";
 const Skills = () => {
   const data = [
     {
@@ -29,19 +34,19 @@ const Skills = () => {
       link: "https://nextjs.org/",
       title: "NextJs",
       icon: NextJsIcon.src,
-      percent: "90",
+      percent: "80",
     },
     {
       link: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
       title: "HTML",
       icon: HtmlIcon.src,
-      percent: "90",
+      percent: "95",
     },
     {
       link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       title: "CSS",
       icon: CssIcon.src,
-      percent: "90",
+      percent: "95",
     },
     {
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -53,7 +58,7 @@ const Skills = () => {
       link: "https://mui.com/",
       title: "Material UI",
       icon: MaterialUiIcon.src,
-      percent: "90",
+      percent: "100",
     },
     {
       link: "https://tailwindcss.com/",
@@ -62,15 +67,27 @@ const Skills = () => {
       percent: "90",
     },
     {
-      link: "https://nodejs.org/en",
-      title: "NodeJs",
-      icon: NodeJsIcon.src,
+      link: "https://www.github.com/",
+      title: "Github",
+      icon: GitIcon.src,
       percent: "90",
     },
     {
-      link: "https://www.mongodb.com/",
-      title: "MongoDb",
-      icon: MongoDbIcon.src,
+      link: "https://firebase.google.com/",
+      title: "Firebase",
+      icon: FirebaseIcon.src,
+      percent: "90",
+    },
+    {
+      link: "https://www.vercel.com/",
+      title: "Vercel",
+      icon: VercelIcon.src,
+      percent: "90",
+    },
+    {
+      link: "https://www.getbootstrap.com/",
+      title: "Bootstrap",
+      icon: BootstrapIcon.src,
       percent: "90",
     },
   ];
@@ -84,8 +101,8 @@ const Skills = () => {
       m={"4% 0"}
       id="skills"
     >
-      <Box  className="global_width">
-        <Box textAlign={"center"} margin={"auto"}  mb={"30px"}>
+      <Box className="global_width">
+        <Box textAlign={"center"} margin={"auto"} mb={"30px"}>
           <Typography className="gradient-font heading" variant="h5">
             My Skills
           </Typography>
@@ -96,10 +113,18 @@ const Skills = () => {
         </Box>
         <Grid container>
           {data.map((item, i) => (
-            <Grid display={"flex"} justifyContent={"center"} item lg={2} md={3} sm={4} xs={6} key={i}>
+            <Grid
+              display={"flex"}
+              justifyContent={"center"}
+              item
+              lg={2}
+              md={3}
+              sm={4}
+              xs={6}
+              key={i}
+            >
               <Tooltip arrow placement="top" title={item.title}>
                 <Box
-                  // data-aos={i % 2 == 0 ? "fade-up-right" : "fade-up-left"}
                   data-aos="zoom-in"
                   data-aos-duration="2000"
                   onClick={() => window.open(item.link, "_blank")}
