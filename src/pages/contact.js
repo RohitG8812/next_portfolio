@@ -177,7 +177,6 @@ const Contact = () => {
                 gap={"10px"}
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                // ml={[0, 0, 0, "25%"]}
               >
                 <Box>
                   <IconButton
@@ -222,7 +221,6 @@ const Contact = () => {
                 gap={"10px"}
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                // ml={[0, 0, 0, "25%"]}
               >
                 <Box>
                   <IconButton
@@ -267,7 +265,6 @@ const Contact = () => {
                 gap={"10px"}
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                // ml={[0, 0, 0, "25%"]}
               >
                 <Box>
                   <IconButton
