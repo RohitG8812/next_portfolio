@@ -22,7 +22,7 @@ const Projects = () => {
       name: "Portfolio",
       desc: "A portfolio website",
       image: Portfolio.src,
-      link: "https://project-airbnb-com.vercel.app/",
+      link: "https://github.com/RohitG8812/next_portfolio",
     },
     {
       name: "PromptlyAi",

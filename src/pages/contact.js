@@ -11,8 +11,39 @@ import React, { useState } from "react";
 import CallIcon from "@mui/icons-material/Call";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import toast from "react-hot-toast";
 const Contact = () => {
-  const [messageSent, setMessageSent] = useState(false);
+  const [inputData, setInputData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    contactNum: "",
+    message: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInputData({
+      ...inputData,
+      [name]: value,
+    });
+  };
+
+  const clearAllInput = () => {
+    setInputData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      contactNum: "",
+      message: "",
+    });
+  };
+
+  const handleMessageSentToast = (e) => {
+    e.preventDefault();
+    toast.success("Message Sent Successfully ⚡");
+    clearAllInput();
+  };
   return (
     <Box
       width={"100%"}
@@ -31,7 +62,7 @@ const Contact = () => {
               data-aos="fade-right"
               data-aos-duration="2000"
               padding={"40px"}
-              borderRadius={"20px"}
+              borderRadius={"10px"}
               bgcolor={"#fff"}
               mb="30px"
             >
@@ -44,38 +75,62 @@ const Contact = () => {
                   do. Just simple like that!
                 </Typography>
               </Box>
-              <form>
+              <form onSubmit={handleMessageSentToast}>
                 <Grid container spacing={2}>
                   <Grid item sm={6} xs={6}>
                     <TextField
                       fullWidth
                       size="small"
+                      name="firstName"
                       placeholder="First name"
+                      value={inputData.firstName}
+                      onChange={handleInputChange}
+                      required
                     />
                   </Grid>
                   <Grid item sm={6} xs={6}>
-                    <TextField fullWidth size="small" placeholder="Last name" />
-                  </Grid>
-                  <Grid item sm={6} xs={12}>
                     <TextField
                       fullWidth
                       size="small"
-                      placeholder="Email address"
+                      name="lastName"
+                      placeholder="Last name"
+                      value={inputData.lastName}
+                      onChange={handleInputChange}
+                      required
                     />
                   </Grid>
                   <Grid item sm={6} xs={12}>
                     <TextField
                       fullWidth
                       size="small"
+                      name="email"
+                      placeholder="Email address"
+                      value={inputData.email}
+                      onChange={handleInputChange}
+                      required
+                    />
+                  </Grid>
+                  <Grid item sm={6} xs={12}>
+                    <TextField
+                      fullWidth
+                      size="small"
+                      name="contactNum"
                       placeholder="Phone number"
+                      value={inputData.contactNum}
+                      onChange={handleInputChange}
+                      required
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
                       multiline
+                      name="message"
                       rows={6}
                       placeholder="Message"
+                      value={inputData.message}
+                      onChange={handleInputChange}
+                      required
                     />
                   </Grid>
                 </Grid>
@@ -88,6 +143,7 @@ const Contact = () => {
                   }}
                   variant="outlined"
                   size="large"
+                  type="submit"
                 >
                   Send Message
                 </Button>
@@ -95,9 +151,18 @@ const Contact = () => {
             </Box>
           </Grid>
 
-          <Grid width={"100%"} item lg={6} md={12} sm={12}>
+          <Grid
+            width={"100%"}
+            item
+            lg={6}
+            md={12}
+            sm={12}
+            display={"flex"}
+            justifyContent={"center"}
+            className="contact-details-main"
+          >
             <Box
-              width={"100%"}
+              width={"fit-content"}
               height={"100%"}
               display={"flex"}
               alignItems={["start", "start", "center", "start"]}
@@ -112,15 +177,15 @@ const Contact = () => {
                 gap={"10px"}
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                ml={[0, 0, 0, "25%"]}
+                // ml={[0, 0, 0, "25%"]}
               >
                 <Box>
                   <IconButton
                     className="gradient-bg pointer"
                     sx={{
                       color: "#fff",
-                      width: "60px",
-                      height: "60px",
+                      width: "50px",
+                      height: "50px",
                     }}
                     href="tel:+91 8483982211"
                   >
@@ -131,7 +196,7 @@ const Contact = () => {
                   <Box sx={{ marginLeft: "10px" }}>
                     <Typography
                       variant="p"
-                      fontSize={["15px", "15px", "15px", "18px"]}
+                      fontSize={["13px", "14px", "14px", "14px"]}
                     >
                       Phone
                     </Typography>
@@ -141,7 +206,8 @@ const Contact = () => {
                       }}
                       variant="h6"
                       className="pointer"
-                      fontSize={["18px", "18px", "18px", "22px"]}
+                      letterSpacing={"0.43px"}
+                      fontSize={["17px", "18px", "18px", "20px"]}
                     >
                       +91 8483982211
                     </Typography>
@@ -156,15 +222,15 @@ const Contact = () => {
                 gap={"10px"}
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                ml={[0, 0, 0, "25%"]}
+                // ml={[0, 0, 0, "25%"]}
               >
                 <Box>
                   <IconButton
                     className="gradient-bg pointer"
                     sx={{
                       color: "#fff",
-                      width: "60px",
-                      height: "60px",
+                      width: "50px",
+                      height: "50px",
                     }}
                     href="mailto:rohitg8812@gmail.com"
                   >
@@ -175,13 +241,14 @@ const Contact = () => {
                   <Box sx={{ marginLeft: "10px" }}>
                     <Typography
                       variant="p"
-                      fontSize={["15px", "15px", "15px", "18px"]}
+                      fontSize={["13px", "14px", "14px", "14px"]}
                     >
                       Email
                     </Typography>
                     <Typography
                       variant="h6"
-                      fontSize={["18px", "18px", "18px", "22px"]}
+                      letterSpacing={"0.43px"}
+                      fontSize={["17px", "18px", "18px", "20px"]}
                       onClick={() => {
                         window.open("mailto:rohitg8812@gmail.com");
                       }}
@@ -200,15 +267,15 @@ const Contact = () => {
                 gap={"10px"}
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                ml={[0, 0, 0, "25%"]}
+                // ml={[0, 0, 0, "25%"]}
               >
                 <Box>
                   <IconButton
                     className="gradient-bg pointer"
                     sx={{
                       color: "#fff",
-                      width: "60px",
-                      height: "60px",
+                      width: "50px",
+                      height: "50px",
                     }}
                     target="_blank"
                     href="https://www.google.com/maps/place/Virar,+Maharashtra/@19.462578,72.7637375,13z/data=!3m1!4b1!4m6!3m5!1s0x3be7aa23dce7efbf:0x99bd87871748d8f4!8m2!3d19.4563596!4d72.7924612!16zL20vMDQxYmdr?entry=ttu"
@@ -220,13 +287,14 @@ const Contact = () => {
                   <Box sx={{ marginLeft: "10px" }}>
                     <Typography
                       variant="p"
-                      fontSize={["15px", "15px", "15px", "18px"]}
+                      fontSize={["13px", "14px", "14px", "14px"]}
                     >
                       Address
                     </Typography>
                     <Typography
                       variant="h6"
-                      fontSize={["18px", "18px", "18px", "22px"]}
+                      letterSpacing={"0.43px"}
+                      fontSize={["17px", "18px", "18px", "20px"]}
                       onClick={() => {
                         window.open(
                           "https://www.google.com/maps/place/Virar,+Maharashtra/@19.462578,72.7637375,13z/data=!3m1!4b1!4m6!3m5!1s0x3be7aa23dce7efbf:0x99bd87871748d8f4!8m2!3d19.4563596!4d72.7924612!16zL20vMDQxYmdr?entry=ttu",
