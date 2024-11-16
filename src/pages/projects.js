@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import BellaVita from "../components/icons/projects/bellavita.png";
-import Portfolio from "../components/icons/projects/portfolio.png";
+import Portfolio from "../components/icons/projects/portfolioScreen.png";
 import PromptlyAi from "../components/icons/projects/promptlyAi.png";
 import Todo_App from "../components/icons/projects/todo.png";
 import Travel from "../components/icons/projects/travel.png";
