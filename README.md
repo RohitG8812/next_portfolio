@@ -1,40 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website 🌟
 
-## Getting Started
+My Portfolio Website built using Next.js, Material-UI (MUI), and several amazing npm packages! 🚀. This project represents not only my technical skills but also my passion for creating seamless, visually appealing, and functional web experiences. Here's what I included:
 
-First, run the development server:
+You can view the deployed project here: [Portfolio](https://next-portfolio-rohit.vercel.app/) 🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack 🛠️
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-  **Next.js**: React framework for server-side rendering and routing.
+-  **Material-UI(MUI)**: Component library for responsive and accessible designs.
+-  **npm Packages**: Added powerful features and functionalities seamlessly.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features ✨
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- **Great UI**: Designed a modern and responsive layout.
+- **Responsive Design**: Fully adaptable to different screen sizes.
+- **Modern UI/UX**: Leveraging Material-UI components for clean and professional aesthetics.
+- **Interactive Elements**: Subtle animations and transitions to enhance user engagement
+- **Custom Contact Form**: Allows users to get in touch easily.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Goals for This Portfolio 🎯
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Demonstrate my expertise as a Frontend Web Developer.
+- Showcase some of my Skills, Works, Services, and Projects.
+- Help potential collaborators and recruiters connect with me easily.
 
-## Learn More
+## Images 🖼️
 
-To learn more about Next.js, take a look at the following resources:
+### Homepage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Homepage](https://github.com/RohitG8812/next_portfolio/blob/main/public/preview_images/homePage.png?raw=true)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Services Page
 
-## Deploy on Vercel
+![Services Page](https://github.com/RohitG8812/next_portfolio/blob/main/public/preview_images/services.png?raw=true)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### My Works Page
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![My Works Page](https://github.com/RohitG8812/next_portfolio/blob/main/public/preview_images/works.png?raw=true)
+
+### Experience and Education Page
+
+![Experience and Education Pagae](https://github.com/RohitG8812/next_portfolio/blob/main/public/preview_images/exp-edu.png?raw=true)
+
+### Skills Page
+
+![SKills Page](https://github.com/RohitG8812/next_portfolio/blob/main/public/preview_images/skills.png?raw=true)
+
+### Contact Page
+
+![Contact Page](https://github.com/RohitG8812/next_portfolio/blob/main/public/preview_images/contact.png?raw=true)
+
+## Installation 🏗️
+
+To get started with this project locally, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/RohitG8812/next_portfolio.git
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd portfolio
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+
+5. Open your browser and navigate to:
+
+   ```bash
+   npm run dev
+    
