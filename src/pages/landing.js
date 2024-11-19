@@ -17,8 +17,8 @@ const Landing = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Prathamesh_Chavan_CV.pdf"; // Path to your CV file in the public directory
-    link.download = "Prathamesh_Chavan_CV.pdf"; // Desired file name for the downloaded file
+    link.href = "/Rohit_Gupta_CV.pdf"; // Path to your CV file in the public directory
+    link.download = "Rohit_Gupta_CV.pdf"; // Desired file name for the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

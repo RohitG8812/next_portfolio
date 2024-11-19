@@ -7,7 +7,7 @@ const Exp_Edu = () => {
   const experience = [
     {
       year: "Feb 2024 - Aug 2024",
-      designation: "Junior Web Developer",
+      designation: "Web Developer",
       location: "Virar, Maharashtra",
     },
     {
@@ -19,12 +19,12 @@ const Exp_Edu = () => {
 
   const education = [
     {
-      year: "May 2023 - Mar 2024",
+      year: "May 2023 - June 2024",
       course: "Web Development",
       location: "Udemy Online Course",
     },
     {
-      year: "Jun 2021 - Jul 2023",
+      year: "Jun 2020 - Jul 2023",
       course: "Bachelor of Computer Applications",
       location: "Nashik, Maharashtra",
     },
