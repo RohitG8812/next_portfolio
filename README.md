@@ -2,7 +2,7 @@
 
 My Portfolio Website built using Next.js, Material-UI (MUI), and several amazing npm packages! 🚀. This project represents not only my technical skills but also my passion for creating seamless, visually appealing, and functional web experiences. Here's what I included:
 
-You can view the deployed version here: [Portfolio](/https://next-portfolio-rohit.vercel.app/)
+You can view the deployed version here: [Portfolio](https://next-portfolio-rohit.vercel.app/)⚡
 
 ## Tech Stack 🛠️
 
