@@ -215,21 +215,21 @@ const Landing = () => {
                       >
                         <IconButton
                           target="_blank"
-                          href="https://x.com/Prathamesh_2117"
+                          href="https://x.com/RohitGupta84553"
                           className="outlined-icon-btn"
                         >
                           <TwitterIcon sx={{ fontSize: "20px" }} />
                         </IconButton>
                         <IconButton
                           target="_blank"
-                          href="https://www.linkedin.com/in/prathamesh-chavan-5532261b4/"
+                          href="https://www.linkedin.com/in/rohit-gupta-5189a6280/"
                           className="outlined-icon-btn"
                         >
                           <LinkedInIcon sx={{ fontSize: "20px" }} />
                         </IconButton>
                         <IconButton
                           target="_blank"
-                          href="https://github.com/Prathameshschavan"
+                          href="https://github.com/RohitG8812"
                           className="outlined-icon-btn"
                         >
                           <GitHubIcon sx={{ fontSize: "20px" }} />
