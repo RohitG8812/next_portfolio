@@ -6,7 +6,7 @@ import SchoolIcon from "@mui/icons-material/School";
 const Exp_Edu = () => {
   const experience = [
     {
-      year: "Feb 2024 - Aug 2024",
+      year: "Feb 2024 - Oct 2024",
       designation: "Web Developer",
       location: "Virar, Maharashtra",
     },
